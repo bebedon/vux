@@ -1,5 +1,5 @@
 {
-  "name": "vux",
+  "name": "mb-vux",
   "version": "2.11.1",
   "main": "index.js",
   "description": "Mobile web UI based on Vue and WeUI",
