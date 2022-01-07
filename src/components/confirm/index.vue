@@ -26,21 +26,21 @@
         </div>
       </template>
       <div class="weui-dialog__ft">
-        <a v-if="showCancelButton" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default" @click="_onCancel">{{cancelText || $t('cancel_text')}}</a>
-        <a v-if="showConfirmButton" href="javascript:;" class="weui-dialog__btn" :class="`weui-dialog__btn_${confirmType}`" @click="_onConfirm">{{confirmText || $t('confirm_text')}}</a>
+        <a v-if="showCancelButton" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default" @click="_onCancel">{{cancelText || 'cancel'}}</a>
+        <a v-if="showConfirmButton" href="javascript:;" class="weui-dialog__btn" :class="`weui-dialog__btn_${confirmType}`" @click="_onConfirm">{{confirmText || 'confirm'}}</a>
       </div>
     </x-dialog>
   </div>
 </template>
 
-<i18n>
-confirm_text:
-  en: confirm
-  zh-CN: 确定
-cancel_text:
-  en: cancel
-  zh-CN: 取消
-</i18n>
+<!--<i18n>-->
+<!--confirm_text:-->
+<!--  en: confirm-->
+<!--  zh-CN: 确定-->
+<!--cancel_text:-->
+<!--  en: cancel-->
+<!--  zh-CN: 取消-->
+<!--</i18n>-->
 
 <script>
 import XDialog from '../x-dialog'
